@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #20232A ;
+}
+
+.logo {
+    margin-left: 240px;
+    margin-top: 30px;
+}
+.info{
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.info h1{
+    font-size: 44px;
+    color: white;
+    font-family: sans-serif;
+}
+.info p{
+    color: #8a94a7;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 30px;
+    padding-left: 0px;
+}
+
+#pre{
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    color: white;
+    margin-right: 20px;
+    background-color: #168CFA ;
+}
+
+.superior{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* MEIO  */
+.contents{
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box{
+    padding: 32px;
+    text-align: center;
+}
+
+.box h4{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: white;
+}
+.box p{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8A94A7;
+}
+
+
+/* QUADRADOS E SUAS ANIMAÇÕES */
+
+@keyframes animequadrado{
+    0%{transform: scaleX(0) scaleY(1) perspective(0px) rotateY(0deg) rotateX(0deg) rotateZ(0deg);}
+    50%{transform: scaleX(1) scaleY(1) perspective(0px) rotateY(-15deg) rotateX(8deg) rotateZ(-1deg);}
+    100%{transform: scaleX(1) scaleY(1) perspective(500px) rotateY(-15deg) rotateX(8deg) rotateZ(-1deg);}
+    
+}
+@keyframes animequadrado2{
+    0%{transform: scaleX(0) scaleY(1) rotate(0deg);}
+    50%{transform: scaleX(1) scaleY(1) rotate(0deg);}
+    100%{transform: scaleX(1) scaleY(1)  rotate(20deg);}
+    
+}
+@keyframes animequadrado3{
+    0%{transform: scaleX(0) scaleY(1) rotate(0deg);}
+    50%{transform: scaleX(1) scaleY(1) rotate(0deg);}
+    100%{transform: scaleX(1) scaleY(1)  rotate(-315deg);}
+    
+}
+
+.quadrados{
+    width: 300px;
+    margin-top: 100px;
+    height: 300px;
+}
+
+.quadrado{
+    position: relative;
+    margin: auto;
+    background-color: #242830 ;
+    width: 50px;
+    height: 50px;
+    animation-name: animequadrado;
+    animation-duration: 2s;
+    transform: scaleX(1) scaleY(1) perspective(500px) rotateY(-15deg) rotateX(8deg) rotateZ(-1deg);
+    z-index: 50;
+    
+    
+}
+
+.quadrado2{
+    position: relative;
+    bottom: 230px;
+    left: 100px;
+    margin: auto;
+    background-color: #242830 ;
+    width: 50px;
+    height: 50px;
+    animation-name: animequadrado2;
+    animation-duration: 2s;
+    transform: scaleX(1) scaleY(1)  rotate(20deg);
+    box-shadow: 2px 2px 10px;
+    z-index: 100;
+}
+.quadrado3{
+    position: relative;
+    bottom: 370px;
+    left: 100px;
+    margin: auto;
+    background-color: #0A59A5  ;
+    width: 170px;
+    height: 170px;
+    animation-name: animequadrado3;
+    animation-duration: 1s;
+    transform: scaleX(1) scaleY(1)  rotate(-315deg);
+    box-shadow: 2px 2px 10px;
+    z-index: 30;
+}
+
+.quadrado4{
+    position: relative;
+    margin: auto;
+    background-color: #0A59A5 ;
+    bottom: 300px;
+    right: 100px;
+    width: 80px;
+    height: 80px;
+    animation-name: animequadrado2;
+    animation-duration: 2s;
+    transform: scaleX(1) scaleY(1)  rotate(20deg);
+    z-index: 50;
+}
+.quadrado5{
+    position: relative;
+    bottom: 400px;
+    left: 90px;
+    margin: auto;
+    background-color: #0A59A5  ;
+    width: 100px;
+    height: 100px;
+    animation-name: animequadrado3;
+    animation-duration: 1s;
+    transform: scaleX(1) scaleY(1)  rotate(-315deg);
+    box-shadow: 2px 2px 10px;
+    z-index: 10;
+}
+
+.quadrado-pequeno {
+    width: 100px;
+    height: 100px;
+}
+
+.quadrado-medio {
+    width: 200px;
+    height: 200px;
+}
+
+.quadrado-grande {
+    width: 500px;
+    height: 500px;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h2{
+    font-family: sans-serif;
+    font-size: 38px;
+    color: white;
+}
+
+.container p {
+    color: #8A94A7;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+section.price h2{
+   padding: 30px;
+}
+section.price h2{
+    padding: 30px;
+}
+
+.price h1{
+    color: white;
+    font-size: 44px;
+    font-family: sans-serif;
+}
+
+.price span{
+    color: gray;
+}
+
+.box-preco{
+    margin-top: 80px;
+    margin-left: auto;margin-right: auto;
+    box-shadow: 2px 2px 10px;
+    width: 300px;
+    margin-bottom: 80px;
+}
+
+.box-preco p{
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.box-preco ul{
+    list-style: none;
+}
+
+.box-preco li{
+    border-top-width: 10px;
+    border-width: 0px;
+    border-color: gray;
+    font-size: 16px;
+    border-style: solid;
+    padding: 10px;
+    color: #8A94A7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-preco li i {
+    margin-right: 10px;
+}
